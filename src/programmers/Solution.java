@@ -1,12 +1,23 @@
 package programmers;
 
 public class Solution {
-    public int solution(String n_str) {
-        int answer = Integer.parseInt(n_str);
+    public int solution(int[] num_list) {
+        int num1 = 0;
+        int num2 = 0;
+        int answer = 0;
+        for (int i = 0; i < num_list.length; i++) {
+            if (num_list[i] % 2 == 0) {
+                num1 *= 10;
+                num1 += num_list[i];
+
+            } else if (num_list[i] % 2 != 0) {
+                num2 *= 10;
+                num2 += num_list[i];
+            }
+        }
+        answer = num1 + num2;
         return answer;
     }
-    
-    
 
     public static void main(String[] args) {
 
