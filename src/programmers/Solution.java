@@ -1,14 +1,9 @@
 package programmers;
 
 public class Solution {
-    public int solution(String n_str) {
-        int answer = Integer.parseInt(n_str);
+    public String[] solution(String my_string) {
+        String[] answer = {};
         return answer;
     }
-    
-    
 
-    public static void main(String[] args) {
-
-    }
 }
